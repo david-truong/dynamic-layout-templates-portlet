@@ -1,0 +1,27 @@
+#dynamic-template {
+	margin:10px 0px;
+}	
+
+#dynamic-template .portlet-layout {
+	background-color: #cccccc;
+	margin-bottom: 10px;
+	padding:10px;
+}
+
+#dynamic-template .portlet-column {
+	background-color: #0099cc;
+	height: 100px;
+	border:5px solid black;
+	text-align:center;
+	vertical-align:center;
+}
+
+.dynamic-template .aui-field-input-text {
+	width: 200px;	
+}
+
+.dynamic-template textarea {
+	width: 100%;
+	height: 300px;
+	margin: 10px 0px;
+}

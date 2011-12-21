@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<project name="dynamic-layout-templates-portlet" basedir="." default="deploy">
+	<property name="ant.import.bug" value="." />
+	
+	<import file="../build-common-portlet.xml" />
+</project>

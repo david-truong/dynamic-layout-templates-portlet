@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_0_0.dtd">
+
+<service-builder package-path="com.liferay.portlet.dlt">
+	<namespace>DLT</namespace>
+	<entity name="DynamicTemplate" local-service="true" remote-service="true">
+		<!-- PK fields -->
+		<column name="templateId" type="long" primary="true"></column>
+		<!-- Audit fields -->
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+		<column name="companyId" type="long"></column>
+		<column name="groupId" type="long"></column>
+		<!-- Other fields -->
+		<column name="name" type="String"></column>
+		<column name="html" type="String"></column>
+		<!-- Order -->
+		<!-- Finder methods -->
+		<finder return-type="Collection" name="CompanyId_GroupId">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+		</finder>
+		<finder return-type="DynamicTemplate" name="Name">
+			<finder-column name="name"></finder-column>
+		</finder>
+		<reference entity="Layout" package-path="com.liferay.portal"></reference>
+	</entity>
+	<exceptions>
+		<exception>DynamicTemplateName</exception>
+		<exception>DynamicTemplateHtml</exception>
+	</exceptions>
+</service-builder>

@@ -1,0 +1,1 @@
+Liferay.Service.register("Liferay.Service.DLT", "com.liferay.portlet.dlt.service", "dynamic-layout-templates-portlet");

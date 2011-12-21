@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<custom-sql>
+	<sql id="com.liferay.portlet.dlt.service.persistence.DynamicTemplateFinder.findByCompanyId_GroupId">
+		<![CDATA[
+			SELECT
+				{DT.*}
+			FROM
+				DynamicTemplate
+			WHERE
+				companyId IN (0, ?)
+			AND
+				groupId IN (0, ?)
+		]]>
+	</sql>
+</custom-sql>
